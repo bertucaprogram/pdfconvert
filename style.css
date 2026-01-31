@@ -1,20 +1,61 @@
+/* Sfondo verde chiaro */
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  padding: 40px;
+  background-color: #ccffcc; /* verde chiaro */
+  text-align: center;
+  padding: 50px;
+  margin: 0;
 }
 
+/* Titolo rosso e grassetto */
 h1 {
-  margin-bottom: 20px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 36px;
 }
 
-input, button {
+/* Pulsanti e input file centrati e dentro rettangoli */
+input[type="file"], button {
   display: block;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin: 20px auto;
+  padding: 15px 30px;
   font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
 }
 
-button {
-  cursor: pointer;
+/* Hover sui pulsanti */
+input[type="file"]:hover, button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Contenitore anteprima immagini */
+#preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Stile anteprime immagini */
+#preview img {
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fff;
+}
+
+/* Footer in basso */
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+  color: #333;
 }
